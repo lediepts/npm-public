@@ -1,0 +1,49 @@
+{
+  "name": "4s-server",
+  "version": "1.0.3",
+  "description": "",
+  "main": "libs/index.js",
+  "types": "libs/index.d.ts",
+  "files": [
+    "libs"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --pretty --transpile-only --ignore client src/index.ts"
+  },
+  "keywords": [
+    "4s",
+    "node server"
+  ],
+  "author": "diep.le",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/helmet": "^4.0.0",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/morgan": "^1.9.3",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^17.0.23",
+    "@webpack-cli/generators": "^3.0.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.2",
+    "helmet": "^5.0.2",
+    "ipware": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  }
+}
